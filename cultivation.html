@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="script.js"></script>
+    <title>Cultivation</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <section class="header" style="background-color: #2e7d32; padding: 10px 20px;">
+        <div class="nav-bar" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <div class="left-side" style="flex: 1;">
+                <div class="logo">
+                    <img src="Images/agzone-logo.png" alt="AgZone-Logo" title="AgZone" style="height: 50px;">
+                </div>
+            </div>
+            <div class="right-side" style="display: flex; align-items: center;">
+                <ul id="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+                    <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf"></i> Crops</a></li>
+                    <li><a href="rent_machine.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-bus"></i> Rent machinery</a></li>
+                    <li><a href="cultivation.html" style="color: #f4b400; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation & Protection</a></li>
+                    <li><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <button class="right-bar" style="display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: #fff;">
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+            </button>
+            <div class="mobile_nav" style="display: none; position: fixed; top: 0; right: 0; width: 250px; height: 100%; background-color: #2e7d32; padding: 20px; z-index: 1000;">
+                <ul id="mobile_nav_links" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li style="margin-bottom: 15px;"><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf"></i> Crops</a></li>
+                    <li style="margin-bottom: 15px;"><a href="rent_machine.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-bus"></i> Rent machinery</a></li>
+                    <li style="margin-bottom: 15px;"><a href="cultivation.html" style="color: #f4b400; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation & Protection</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+                </ul>
+                <div class="mobile_footer" style="position: absolute; bottom: 20px; text-align: center; color: #fff; font-size: 12px;">
+                    <p>Copyright &copy; 2025 AgZone. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+        <div class="hero-image" style="height: 300px; background: url('Images/hero-bg.jpg') no-repeat center center/cover; position: relative; display: flex; align-items: center; justify-content: center;">
+            <h1 style="font-size: 36px; color: #fff; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Cultivation</h1>
+        </div>
+    </section>
+    <section class="body" style="max-width: 1200px; margin: 20px auto; padding: 20px;">
+        <div class="crops">
+            <h1 style="font-size: 28px; color: #2e7d32; text-align: center; margin-bottom: 20px;">Crops</h1>
+            <div class="wheat-grain" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/wheat-grain.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">What fertilizer is best for Wheat?</h1>
+                    <h2 style="font-size: 20px; color: #333; margin: 0 0 10px;">Phosphorus (P) – Potassium (K)</h2>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">P and K are the two most important nutrients after N for wheat cultivation. Usually, the total P and K fertilizers are added to the crop at sowing. Usually, most of them are controlled released fertilizers to reduce nutrient leakage and offer better results.</p>
+                </div>
+            </div>
+            <div class="legumes" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/legumes.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">What is the best suitable area and time to grow Legumes?</h1>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">Plant in the heaviest of soils, and plant as late as November on the coast. This plant ignores winter and chugs along producing lots of carbon-rich foliage to compost, and fixing nitrogen as it grows. In the spring, just cut the plants down at ground level and lay them as a mulch over spring beds.</p>
+                </div>
+            </div>
+            <div class="vegetables" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/vegetables.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">What is the best Climate to grow Leaf Vegetables?</h1>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">Leafy greens grow best in full sun, well-drained soil, and cool temperatures. Leafy greens require cool, moist growing conditions. Daytime temperatures of 70 to 75°F and nighttime temperatures of 55 to 60°F are ideal. Adequate supplies of moisture and nutrients are also important.</p>
+                </div>
+            </div>
+            <div class="roots" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/carrot.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">What is the best Climate to grow Root Vegetables?</h1>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">Most root vegetables grow best in cool weather, but some are capable of thriving in the summer heat. Beets, radishes, carrots, and turnips are easy-to-grow, cool weather crops that provide a worthwhile harvest even in a small space.</p>
+                </div>
+            </div>
+            <div class="ferti" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/fertilizer.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">Common fertilizer used for cultivation</h1>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">The three major types of commercial fertilizer used in the U.S. are nitrogen, phosphate, and potash. Nitrogen (N) is found primarily in an organic form in soils but can also occur as nitrate.</p>
+                </div>
+            </div>
+            <div class="pesti" style="display: flex; flex-wrap: wrap; gap: 20px; margin-bottom: 20px; background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px;">
+                <div class="image" style="flex: 1; min-width: 300px;">
+                    <img src="./Images/pesti.jpg" style="width: 100%; height: 200px; object-fit: cover; border-radius: 5px;">
+                </div>
+                <div class="content" style="flex: 1; min-width: 300px; padding: 10px;">
+                    <h1 style="font-size: 24px; color: #2e7d32; margin: 0 0 10px;">How to store pesticides?</h1>
+                    <p style="font-size: 14px; line-height: 1.6; color: #333;">If possible, keep pesticides in a locked cabinet in a well-ventilated utility area or garden shed. Never store pesticides in cabinets with or near food, animal feed, or medical supplies. Store flammable liquids outside your living area and far away from an ignition source such as a furnace, car, grill, or lawn mower.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer" style="background-color: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="left-side-footer" style="flex: 1; text-align: center;">
+            <p style="margin: 0; font-size: 14px;">&copy; 2025 All Rights Reserved. AgZone.</p>
+        </div>
+        <div class="right-side-footer" style="flex: 1; text-align: center;">
+            <p style="margin: 0; font-size: 14px;">Web Design and Development by <a href="index.html" style="color: #f4b400; text-decoration: none;">Md. Akramuzzaman</a></p>
+        </div>
+    </section>
+</body>
+</html>

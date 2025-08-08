@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script defer src="script.js"></script>
+    <title>AgZone - Home</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4; color: #333;">
+    <div class="home" style="position: relative;">
+        <!-- Navigation Bar -->
+        <div class="nav-bar" style="position: fixed; top: 0; left: 0; width: 100%; background-color: #2e7d32; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+            <div class="left-side" style="display: flex; align-items: center;">
+                <div class="logo">
+                    <img src="Images/agzone-logo.png" alt="AgZone-Logo" title="AgZone" style="height: 50px;">
+                </div>
+            </div>
+
+            <div class="right-side" style="display: flex; align-items: center;">
+                <ul id="nav-links" style="list-style: none; margin: 0; padding: 0; display: flex; gap: 20px;">
+                    <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf" aria-hidden="true"></i> Crops</a></li>
+                    <li><a href="rent_machine.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-bus" aria-hidden="true"></i> Rent machinery</a></li>
+                    <li><a href="cultivation.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation &amp; Protection</a></li>
+                    <li><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </div>
+
+            <button id="login" style="background-color: #fff; color: #2e7d32; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; margin-left: 20px;"><i class="fa fa-fw fa-user"></i> Logout</button>
+
+            <button class="right-bar" style="background: none; border: none; cursor: pointer; display: none;">
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="mobile_nav" style="display: none; position: fixed; top: 70px; left: 0; width: 100%; background-color: #2e7d32; padding: 20px; z-index: 999;">
+            <ul id="mobile_nav_links" style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 15px;">
+                <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                <li><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf"></i> Crops</a></li>
+                <li><a href="rent_machine.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-bus"></i> Rent machinery</a></li>
+                <li><a href="cultivation.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation &amp; Protection</a></li>
+                <li><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+            </ul>
+            <button id="mobile_login" style="background-color: #fff; color: #2e7d32; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 14px; margin-top: 10px;"><i class="fa fa-fw fa-user"></i> Logout</button>
+            <div class="mobile_footer" style="margin-top: 20px; text-align: center;">
+                <p style="color: #fff; font-size: 14px;">Copyright &copy; 2025 AgZone. All Rights Reserved</p>
+            </div>
+        </div>
+
+        <!-- Hero Image Section -->
+        <div class="hero-image" style="position: relative; width: 50%; height: 50vh; background-image: url('Images/hero-background.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+            <div style="position: absolute; top: 50%; left: 100%; transform: translate(-50%, -50%); text-align: center; color: #fff; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); background-color: rgba(0,0,0,0.4); padding: 20px; border-radius: 10px;">
+                <h1 style="font-size: 48px; margin: 0;">Welcome to AgZone</h1>
+                <p style="font-size: 24px;">Your Partner in Agriculture</p>
+            </div>
+        </div>
+
+    </div>
+
+
+        <!-- Search Bar -->
+        <div class="search_bar" style="display: flex; justify-content: center; align-items: center; padding: 20px; background-color: #fff; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+            <div class="search_img" style="margin-right: 10px;">
+                <img src="Images/Search_img.png" alt="search_image" style="width: 30px; height: 30px;">
+            </div>
+            <input type="text" placeholder="Quick Search" id="quick_search" style="padding: 10px; width: 300px; border: 1px solid #ccc; border-radius: 5px; font-size: 16px;">
+        </div>
+    </div>
+
+    <!-- Sub-home Cards -->
+    <div class="sub-home" style="padding: 40px 20px; background-color: #f9f9f9;">
+        <div class="looking-for" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+                <div class="img">
+                    <img src="Images/machine-1.jpeg" alt="Machine 1" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="description" style="padding: 15px; text-align: center;">
+                    <p style="margin: 0; font-size: 18px; color: #2e7d32;">Looking to buy a machine? <span style="font-weight: bold;">&rarr;</span></p>
+                </div>
+            </div>
+
+            <div class="card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+                <div class="img">
+                    <img src="Images/machine-2.jpeg" alt="Machine 2" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="description" style="padding: 15px; text-align: center;">
+                    <p style="margin: 0; font-size: 18px; color: #2e7d32;">Looking to rent a machine? <span style="font-weight: bold;">&rarr;</span></p>
+                </div>
+            </div>
+
+            <div class="card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+                <div class="img">
+                    <img src="Images/machine-3.jpeg" alt="Machine 3" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="description" style="padding: 15px; text-align: center;">
+                    <p style="margin: 0; font-size: 18px; color: #2e7d32;">Looking to sell a machine? <span style="font-weight: bold;">&rarr;</span></p>
+                </div>
+            </div>
+
+            <div class="card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; transition: transform 0.3s;">
+                <div class="img">
+                    <img src="Images/crops-image.jpeg" alt="Crops" style="width: 100%; height: 200px; object-fit: cover;">
+                </div>
+                <div class="description" style="padding: 15px; text-align: center;">
+                    <p style="margin: 0; font-size: 18px; color: #2e7d32;">Looking for information? <span style="font-weight: bold;">&rarr;</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="about-agzone" style="padding: 40px 20px; background-color: #fff;">
+        <div class="about" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 20px;">
+            <div class="image" style="flex: 1; min-width: 300px;">
+                <p id="inc" style="font-size: 24px; font-weight: bold; color: #2e7d32; margin-bottom: 10px;">About AgZone, Inc.</p>
+                <img src="Images/about-agzone.jpeg" alt="About AgZone" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="about-para" style="flex: 1; min-width: 300px; display: flex; align-items: center;">
+                <p style="font-size: 16px; line-height: 1.6;">
+                    At <span style="color: #2e7d32; font-weight: bold;">AgZone</span>, based in Kandy, we offer expert advice with a wide variety of specialist products.
+                    We are fortunate to be able to offer our clients the opportunity to test drive machines
+                    at our farm which allows you to make a fully informed choice. We have great people all over the country
+                    working towards producing the world’s finest products, and we’re always on the lookout for great talent.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services" style="padding: 40px 20px; background-color: #f9f9f9;">
+        <div class="heading" style="text-align: center; margin-bottom: 30px;">
+            <p style="font-size: 32px; font-weight: bold; color: #2e7d32;">Our Services</p>
+        </div>
+        <div class="cards" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="actual-card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+                <div class="card-image">
+                    <img src="Images/buy (2).png" alt="Buy Service" style="width: 100%; height: 150px; object-fit: contain;">
+                </div>
+                <div class="content">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 10px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel, non eius possimus?</p>
+                    <p id="more" style="color: #2e7d32; font-weight: bold; cursor: pointer;">Learn More</p>
+                </div>
+            </div>
+
+            <div class="actual-card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+                <div class="card-image">
+                    <img src="Images/sell (2).png" alt="Sell Service" style="width: 100%; height: 150px; object-fit: contain;">
+                </div>
+                <div class="content">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 10px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel, non eius possimus?</p>
+                    <p id="more" style="color: #2e7d32; font-weight: bold; cursor: pointer;">Learn More</p>
+                </div>
+            </div>
+
+            <div class="actual-card" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; text-align: center;">
+                <div class="card-image">
+                    <img src="Images/rent (2).png" alt="Rent Service" style="width: 100%; height: 150px; object-fit: contain;">
+                </div>
+                <div class="content">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 10px 0;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae, voluptates vel, non eius possimus?</p>
+                    <p id="more" style="color: #2e7d32; font-weight: bold; cursor: pointer;">Learn More</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Updates -->
+    <section class="recent-updates" style="padding: 40px 20px; background-color: #fff;">
+        <h1 style="text-align: center; font-size: 32px; color: #2e7d32; margin-bottom: 30px;">Check out our recent news and updates</h1>
+        <div class="recent-pics" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+            <div class="recent-img1" style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+                <img src="Images/recent-img1.jpg" alt="Recent News 1" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="flex" style="padding: 15px; display: flex; gap: 20px;">
+                    <div class="date" style="text-align: center;">
+                        <span id="date" style="display: block; font-size: 24px; font-weight: bold; color: #2e7d32;">30</span>
+                        <span id="year" style="font-size: 16px; color: #666;">December 2025</span>
+                    </div>
+                    <div class="img-description">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-img2" style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+                <img src="Images/recent-img2.jpg" alt="Recent News 2" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="flex" style="padding: 15px; display: flex; gap: 20px;">
+                    <div class="date" style="text-align: center;">
+                        <span id="date" style="display: block; font-size: 24px; font-weight: bold; color: #2e7d32;">5</span>
+                        <span id="year" style="font-size: 16px; color: #666;">October 2025</span>
+                    </div>
+                    <div class="img-description">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-img3" style="background-color: #f9f9f9; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden;">
+                <img src="Images/recent-img3.jpg" alt="Recent News 3" style="width: 100%; height: 200px; object-fit: cover;">
+                <div class="flex" style="padding: 15px; display: flex; gap: 20px;">
+                    <div class="date" style="text-align: center;">
+                        <span id="date" style="display: block; font-size: 24px; font-weight: bold; color: #2e7d32;">18</span>
+                        <span id="year" style="font-size: 16px; color: #666;">September 2025</span>
+                    </div>
+                    <div class="img-description">
+                        <p style="font-size: 16px; line-height: 1.6; margin: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis risus vitae lacus pulvinar suscipit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="what-they-say" style="padding: 40px 20px; background-color: #f9f9f9;">
+        <h1 style="text-align: center; font-size: 32px; color: #2e7d32; margin-bottom: 30px;">What Our Customers Say About Us</h1>
+        <div class="div" style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 20px;">
+            <div class="what-they-say-image" style="flex: 1; min-width: 300px;">
+                <img src="Images/what-they-img.png" alt="Customer Reviews" style="width: 100%; border-radius: 10px;">
+            </div>
+            <div class="reviews" style="flex: 1; min-width: 300px;">
+                <div class="review active" style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti!"</p>
+                    <div class="img-review" style="display: flex; align-items: center; gap: 10px;">
+                        <div class="user-profile1" style="width: 50px; height: 50px; background-color: #ccc; border-radius: 50%;"></div>
+                        <h3 style="margin: 0; font-size: 18px; color: #2e7d32;">Md. Akramuzzaman</h3>
+                    </div>
+                    <div class="review-rating" style="display: flex; align-items: center; gap: 5px; margin-top: 10px;">
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div-none" style="color: #ccc;">&#9734;</div>
+                        <span id="review1-rating" style="font-size: 14px; color: #666;">4/5</span>
+                    </div>
+                </div>
+
+                <div class="review" style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px;">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero corrupti!"</p>
+                    <div class="img-review" style="display: flex; align-items: center; gap: 10px;">
+                        <div class="user-profile2" style="width: 50px; height: 50px; background-color: #ccc; border-radius: 50%;"></div>
+                        <h3 style="margin: 0; font-size: 18px; color: #2e7d32;">Md. Akramuzzaman</h3>
+                    </div>
+                    <div class="review-rating" style="display: flex; align-items: center; gap: 5px; margin-top: 10px;">
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div-none" style="color: #ccc;">&#9734;</div>
+                        <div class="star-div-none" style="color: #ccc;">&#9734;</div>
+                        <span id="review1-rating" style="font-size: 14px; color: #666;">3/5</span>
+                    </div>
+                </div>
+
+                
+
+
+                <div class="review" style="background-color: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); margin-bottom: 20px;">
+                    <p style="font-size: 16px; line-height: 1.6; margin: 0 0 10px;">
+                        "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Facere placeat laudantium facilis ullam iure numquam quidem
+                        amet doloremque, maiores, ad modi veritatis ea aliquam nisi pariatur,
+                        architecto voluptas omnis labore."
+                    </p>
+                    <div class="img-review" style="display: flex; align-items: center; gap: 10px;">
+                        <div class="user-profile5" style="width: 50px; height: 50px; background-color: #ccc; border-radius: 50%;"></div>
+                        <h3 style="margin: 0; font-size: 18px; color: #2e7d32;">Alex Lee</h3>
+                    </div>
+                    <div class="review-rating" style="display: flex; align-items: center; gap: 5px; margin-top: 10px;">
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div" style="color: #f4b400;">&#9733;</div>
+                        <div class="star-div-none" style="color: #ccc;">&#9734;</div>
+                        <span id="review1-rating" style="font-size: 14px; color: #666;">4/5</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer" style="padding: 20px; background-color: #2e7d32; color: #fff; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+        <div class="left-side-footer">
+            <p style="margin: 0; font-size: 14px;">&copy; 2025 All Rights Reserved. AgZone.</p>
+        </div>
+        <div class="right-side-footer">
+            <p style="margin: 0; font-size: 14px;">Web Design and Development by <a href="index.html" style="color: #f4b400; text-decoration: none;">Md. Akramuzzaman</a></p>
+        </div>
+    </section>
+
+    <!-- Responsive Design -->
+    <style>
+        @media (max-width: 768px) {
+            .nav-bar .right-side { display: none; }
+            .nav-bar .right-bar { display: block; }
+            .mobile_nav { display: block; }
+            .hero-image h1 { font-size: 32px; }
+            .hero-image p { font-size: 18px; }
+            .search_bar input { width: 100%; }
+            .about-agzone .about { flex-direction: column; }
+        }
+        @media (max-width: 480px) {
+            .sub-home .looking-for { grid-template-columns: 1fr; }
+            .services .cards { grid-template-columns: 1fr; }
+            .recent-updates .recent-pics { grid-template-columns: 1fr; }
+            .what-they-say .div { flex-direction: column; }
+        }
+    </style>
+</body>
+</html>

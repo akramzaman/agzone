@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script defer src="add_post.js"></script>
+    <title>Rent Machine</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background-color: #f9f9f9;">
+    <section class="header" style="background-color: #2e7d32; padding: 10px 20px;">
+        <div class="nav-bar" style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+            <div class="left-side" style="flex: 1;">
+                <div class="logo">
+                    <img src="Images/agzone-logo.png" alt="AgZone-Logo" title="AgZone" style="height: 50px;">
+                </div>
+            </div>
+            <div class="right-side" style="display: flex; align-items: center;">
+                <ul id="nav-links" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+                    <li><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf"></i> Crops</a></li>
+                    <li><a href="rent_machine.html" style="color: #f4b400; text-decoration: none; font-size: 16px;"><i class="fa fa-bus"></i> Rent machinery</a></li>
+                    <li><a href="cultivation.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation & Protection</a></li>
+                    <li><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+                </ul>
+            </div>
+            <button class="right-bar" style="display: none; background: none; border: none; cursor: pointer; font-size: 24px; color: #fff;">
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+                <span class="bar" style="display: block; width: 25px; height: 3px; background-color: #fff; margin: 5px 0;"></span>
+            </button>
+            <div class="mobile_nav" style="display: none; position: fixed; top: 0; right: 0; width: 250px; height: 100%; background-color: #2e7d32; padding: 20px; z-index: 1000;">
+                <ul id="mobile_nav_links" style="list-style: none; padding: 0; margin: 0;">
+                    <li style="margin-bottom: 15px;"><a href="index.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-home"></i> Home</a></li>
+                    <li style="margin-bottom: 15px;"><a href="fertilizers.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-leaf"></i> Crops</a></li>
+                    <li style="margin-bottom: 15px;"><a href="rent_machine.html" style="color: #f4b400; text-decoration: none; font-size: 16px;"><i class="fa fa-bus"></i> Rent machinery</a></li>
+                    <li style="margin-bottom: 15px;"><a href="cultivation.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-asl-interpreting"></i> Cultivation & Protection</a></li>
+                    <li style="margin-bottom: 15px;"><a href="contactUs.html" style="color: #fff; text-decoration: none; font-size: 16px;"><i class="fa fa-fw fa-envelope"></i> Contact Us</a></li>
+                </ul>
+                <div class="mobile_footer" style="position: absolute; bottom: 20px; text-align: center; color: #fff; font-size: 12px;">
+                    <p>Copyright &copy; 2025 AgZone. All Rights Reserved</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="hero-image" style="height: 300px; background: url('Images/hero-bg.jpg') no-repeat center center/cover; position: relative; display: flex; align-items: center; justify-content: center;">
+        <div class="rent-a-machine-text" style="text-align: center; color: #fff;">
+            <h1 style="font-size: 36px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Want to Rent a Machine?</h1>
+        </div>
+    </div>
+    <section class="Add-Post" style="text-align: center; padding: 20px;">
+        <button class="post_btn" style="background-color: #2e7d32; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer;">Add Post</button>
+    </section>
+    <section class="rent-box" style="max-width: 1200px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+        <!-- Garden Tractor -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/garden-tractor.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Garden Tractor</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$1,50000</p>
+                <div class="star1" style="color: #f4b400;">☆</div>
+                <div class="star1" style="color: #f4b400;">☆</div>
+                <div class="star1" style="color: #f4b400;">☆</div>
+                <div class="star1" style="color: #f4b400;">☆</div>
+                <div class="star1" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Excavator -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/excavator.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Excavator</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$5,74000</p>
+                <div class="star2" style="color: #f4b400;">☆</div>
+                <div class="star2" style="color: #f4b400;">☆</div>
+                <div class="star2" style="color: #f4b400;">☆</div>
+                <div class="star2" style="color: #f4b400;">☆</div>
+                <div class="star2" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Mover -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/mover.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Mover</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$2,46000</p>
+                <div class="star3" style="color: #f4b400;">☆</div>
+                <div class="star3" style="color: #f4b400;">☆</div>
+                <div class="star3" style="color: #f4b400;">☆</div>
+                <div class="star3" style="color: #f4b400;">☆</div>
+                <div class="star3" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Dump Truck -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/dumb truck.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Dump Truck</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$8,22390</p>
+                <div class="star4" style="color: #f4b400;">☆</div>
+                <div class="star4" style="color: #f4b400;">☆</div>
+                <div class="star4" style="color: #f4b400;">☆</div>
+                <div class="star4" style="color: #f4b400;">☆</div>
+                <div class="star4" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Cement Mixer -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/cement-mixer.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Cement Mixer</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$2,52000</p>
+                <div class="star5" style="color: #f4b400;">☆</div>
+                <div class="star5" style="color: #f4b400;">☆</div>
+                <div class="star5" style="color: #f4b400;">☆</div>
+                <div class="star5" style="color: #f4b400;">☆</div>
+                <div class="star5" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Fork Lift -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/fork-lift.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Fork Lift</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$1,63000</p>
+                <div class="star6" style="color: #f4b400;">☆</div>
+                <div class="star6" style="color: #f4b400;">☆</div>
+                <div class="star6" style="color: #f4b400;">☆</div>
+                <div class="star6" style="color: #f4b400;">☆</div>
+                <div class="star6" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Earth Moving Truck -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/earth-moving-truck.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Earth Moving</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$7,21000</p>
+                <div class="star7" style="color: #f4b400;">☆</div>
+                <div class="star7" style="color: #f4b400;">☆</div>
+                <div class="star7" style="color: #f4b400;">☆</div>
+                <div class="star7" style="color: #f4b400;">☆</div>
+                <div class="star7" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+        <!-- Utility Tractor -->
+        <div class="boxes" style="background-color: #fff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); overflow: hidden; text-align: center;">
+            <div class="hero_img">
+                <img src="./Images/utility-tractor.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+            </div>
+            <div class="machine-name" style="padding: 10px;">
+                <p style="font-size: 18px; color: #2e7d32; margin: 0;">Utility Tractor</p>
+            </div>
+            <div class="price" style="padding: 0 10px 10px; display: flex; align-items: center; justify-content: center; gap: 5px;">
+                <p style="font-size: 16px; color: #333; margin: 0;">$3,12000</p>
+                <div class="star8" style="color: #f4b400;">☆</div>
+                <div class="star8" style="color: #f4b400;">☆</div>
+                <div class="star8" style="color: #f4b400;">☆</div>
+                <div class="star8" style="color: #f4b400;">☆</div>
+                <div class="star8" style="color: #f4b400;">☆</div>
+            </div>
+            <div class="rent" style="padding: 10px;">
+                <button style="background-color: #f4b400; color: #fff; border: none; padding: 8px 16px; border-radius: 5px; cursor: pointer; font-size: 14px;">Contact</button>
+            </div>
+        </div>
+    </section>
+    <section class="footer" style="background-color: #2e7d32; color: #fff; padding: 20px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="left-side-footer" style="flex: 1; text-align: center;">
+            <p style="margin: 0; font-size: 14px;">&copy; 2025 All Rights Reserved. AgZone.</p>
+        </div>
+        <div class="right-side-footer" style="flex: 1; text-align: center;">
+            <p style="margin: 0; font-size: 14px;">Web Design and Development by <a href="index.html" style="color: #f4b400; text-decoration: none;">Md. Akramuzzaman</a></p>
+        </div>
+    </section>
+</body>
+</html>

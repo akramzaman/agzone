@@ -1,4 +1,3 @@
-```php
 <?php
 // Azure MySQL connection details (replace with your values)
 $host = 'agzone-mysql.mysql.database.azure.com';
@@ -74,4 +73,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </section>
 </body>
 </html>
-```
+

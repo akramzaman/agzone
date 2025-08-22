@@ -4,7 +4,7 @@
 $host = 'agzone-mysql.mysql.database.azure.com';
 $dbname = 'agzone_db';
 $username = 'adminuser@agzone-mysql';
-$password = 'YOUR_MYSQL_PASSWORD'; // Replace with your MySQL admin password
+$password = 'MySecurePass123!'; // Replace with your MySQL admin password
 
 // Connect to MySQL database
 try {

@@ -7,10 +7,10 @@ $password = 'MySecurePass123!'; // Replace with your MySQL admin password
 
 // Connect to MySQL database
 try {
-    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
+    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb3", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    die("Connection failed: " . $e->getMessage());
+    $error = "Connection failed: " . $e->getMessage();
 }
 
 // Check if the form was submitted

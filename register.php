@@ -1,13 +1,14 @@
+
 <?php
 // Azure MySQL connection details (replace with your values)
 $host = 'agzone-mysql.mysql.database.azure.com';
 $dbname = 'agzone_db';
 $username = 'adminuser@agzone-mysql';
-$password = 'MySecurePass123!'; // Replace with your MySQL admin password
+$password = 'MyNewSecurePass123!'; // Replace with your MySQL admin password
 
 // Connect to MySQL database
 try {
-    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb3", $username, $password);
+    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb4", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
     $error = "Connection failed: " . $e->getMessage();

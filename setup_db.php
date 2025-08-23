@@ -8,7 +8,7 @@ $password = 'MyNewSecurePass123!'; // Replace with your MySQL admin password
 
 // Connect to MySQL database
 try {
-    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8mb3", $username, $password);
+    $db = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // Create membership table
